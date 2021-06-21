@@ -1,0 +1,57 @@
+name: icon-automation
+on:
+  push:
+    branches:
+    - master
+    # file paths to consider in the event. Optional; defaults to all.
+    paths:
+      - package.json
+
+jobs:
+  icon_automation:
+    name: figma icon automation
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: yarn install
+    - name: Figma Action
+      uses: primer/figma-action@v1.0.0-alpha.2
+      with:
+        args: "format=svg outputDir=./src/"
+      env:
+        FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+    - run: yarn generate
+    - run: yarn build
+    - name: GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v1.2.5
+      with:
+        build_dir: docs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+    - run: yarn build:bundle
+    - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+    - run: yarn publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    - name: Pull Request URL
+      uses: kceb/pull-request-url-action@v2
+      id: pr-url
+ #   - run: echo "prUrl:${{ steps.pr-url.outputs.url }}"
+    - name: slack notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_BOT_WEBHOOK_URL }}
+        SLACK_COLOR: '#307dfb'
+        SLACK_ICON: https://avatars.githubusercontent.com/u/68847252?s=60&v=4
+        SLACK_USERNAME: NottaOrg/react-notticon
+        SLACK_TITLE: Notticon Updates!
+        SLACK_MESSAGE: |
+          兄弟们，咱们的图标更新啦！
+          请使用 yarn upgrade react-notticon --latest 更新。
+          在线查看图标: https://react-notticon.netlify.app
+          查看更新详情: ${{ steps.pr-url.outputs.url }}
