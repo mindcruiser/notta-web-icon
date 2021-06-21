@@ -1,7 +1,7 @@
 {
-  "name": "react-notticon",
+  "name": "notta-web-icon",
   "version": "0.4.32",
-  "description": "Notticon for React.",
+  "description": "Icons for Notta Web",
   "main": "dist/index.js",
   "module": "src/icons.js",
   "typings": "src/icons.d.ts",
@@ -9,7 +9,7 @@
     "dist",
     "es"
   ],
-  "repository": "https://github.com/NottaOrg/react-notticon.git",
+  "repository": "https://github.com/NottaOrg/notta-web-icon.git",
   "author": "leadream",
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
     "design"
   ],
   "bugs": {
-    "url": "https://github.com/NottaOrg/react-notticon/issues"
+    "url": "https://github.com/NottaOrg/notta-web-icon/issues"
   },
-  "homepage": "https://github.com/NottaOrg/react-notticon#readme",
+  "homepage": "https://github.com/NottaOrg/notta-web-icon#readme",
   "scripts": {
     "fetch": "node bin/fetchSVG.js",
     "generate": "sudo rm -rf src/icons && node bin/build.js",

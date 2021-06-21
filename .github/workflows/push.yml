@@ -46,12 +46,12 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_BOT_WEBHOOK_URL }}
-        SLACK_COLOR: '#307dfb'
+        SLACK_COLOR: '#2f89f0'
         SLACK_ICON: https://avatars.githubusercontent.com/u/68847252?s=60&v=4
-        SLACK_USERNAME: NottaOrg/react-notticon
-        SLACK_TITLE: Notticon Updates!
+        SLACK_USERNAME: NottaOrg/notta-web-icon
+        SLACK_TITLE: notta-web-icon Updates!
         SLACK_MESSAGE: |
           兄弟们，咱们的图标更新啦！
-          请使用 yarn upgrade react-notticon --latest 更新。
+          请使用 yarn upgrade notta-web-icon --latest 更新。
           在线查看图标: https://react-notticon.netlify.app
           查看更新详情: ${{ steps.pr-url.outputs.url }}
