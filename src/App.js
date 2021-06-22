@@ -31,7 +31,7 @@ class List extends React.Component {
               const Icon = icons[key];
               return (
                 <li key={index}>
-                  <IconWrapper>
+                  <IconWrapper name={key}>
                     <Icon />
                     <span>{key}</span>
                   </IconWrapper>
