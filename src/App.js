@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components'
-import * as icons from './icons'
-import Header from './components/Header'
-import IconWrapper from './components/IconWrapper'
+import React from "react";
+import styled from "styled-components";
+import * as icons from "./icons";
+import Header from "./components/Header";
+import IconWrapper from "./components/IconWrapper";
 
 const Container = styled.ul`
   display: grid;
@@ -12,29 +12,36 @@ const Container = styled.ul`
   margin: 0;
   padding: 0%;
   list-style: none;
-`
+`;
 
 class List extends React.Component {
   render() {
     return (
-      <div>
-        <Header/>
-        <Container>
-          {
-            Object.keys(icons)
-              .map((key, index) => {
-                const Icon = icons[key]
-                return <li key={index}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ maxWidth: "1080px" }}>
+          <Header />
+          <Container>
+            {Object.keys(icons).map((key, index) => {
+              const Icon = icons[key];
+              return (
+                <li key={index}>
                   <IconWrapper>
-                    <Icon/>
+                    <Icon />
                     <span>{key}</span>
                   </IconWrapper>
                 </li>
-              })
-          }
-        </Container>
+              );
+            })}
+          </Container>
+        </div>
       </div>
-    )
+    );
   }
 }
 
