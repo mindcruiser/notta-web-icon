@@ -40,8 +40,8 @@ export default () => {
           <p>Installation</p>
           <pre>
             <code>
-              npm install notticon --save <br />
-              yarn add notticon
+              npm install notta-web-icon --save <br />
+              yarn add notta-web-icon
             </code>
           </pre>
         </GuideWrapper>
