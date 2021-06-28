@@ -27,17 +27,19 @@ class List extends React.Component {
         <div style={{ maxWidth: "1080px" }}>
           <Header />
           <Container>
-            {Object.keys(icons).map((key, index) => {
-              const Icon = icons[key];
-              return (
-                <li key={index}>
-                  <IconWrapper name={key}>
-                    <Icon />
-                    <span>{key}</span>
-                  </IconWrapper>
-                </li>
-              );
-            })}
+            {Object.keys(Object.fromEntries(Object.entries(icons).sort())).map(
+              (key, index) => {
+                const Icon = icons[key];
+                return (
+                  <li key={index}>
+                    <IconWrapper name={key}>
+                      <Icon />
+                      <span>{key}</span>
+                    </IconWrapper>
+                  </li>
+                );
+              }
+            )}
           </Container>
         </div>
       </div>
