@@ -24,7 +24,7 @@ class List extends React.Component {
           alignItems: "center",
         }}
       >
-        <div style={{ maxWidth: "1080px" }}>
+        <div>
           <Header />
           <Container>
             {Object.keys(Object.fromEntries(Object.entries(icons).sort())).map(
