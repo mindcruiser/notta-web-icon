@@ -29,7 +29,7 @@
     "generate": "sudo rm -rf src/icons && node bin/build.js",
     "build:bundle": "sudo rm -rf dist && node_modules/.bin/rollup --c ./build/rollup.config.bundle.js",
     "dev": "rollup -w -c ./build/rollup.config.dev.js",
-    "build": "rollup -c ./build/rollup.config.prod.js"
+    "build": "yarn fetch && yarn generate && yarn rollup -c ./build/rollup.config.prod.js"
   },
   "config": {
     "style": "fill"
