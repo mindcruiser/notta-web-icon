@@ -15,9 +15,8 @@ const PublicCheckboxUncheckedHovered = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M3 6a3 3 0 013-3h12a3 3 0 013 3v12a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm3-1a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1H6z"
+        d="M6 3a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3V6a3 3 0 00-3-3H6zM5 6a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H6a1 1 0 01-1-1V6zm12.207 3.707a1 1 0 00-1.414-1.414L11 13.086l-1.793-1.793a1 1 0 00-1.414 1.414l2.5 2.5a1 1 0 001.414 0l5.5-5.5z"
       ></path>
-      <path d="M8.5 12l2.5 2.5L16.5 9"></path>
     </svg>
   );
 };
