@@ -4,7 +4,7 @@
   "description": "Icons for Notta Web",
   "main": "dist/index.js",
   "module": "src/icons.js",
-  "typings": "src/icons.d.ts",
+  "typings": "dist/icons.d.ts",
   "files": [
     "dist",
     "es"
