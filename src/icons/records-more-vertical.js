@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PublicExternalLink = props => {
+const RecordsMoreVertical = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -12,20 +12,19 @@ const PublicExternalLink = props => {
       fill={color}
       {...otherProps}
     >
-      <path d="M4 6a2 2 0 012-2h3a1 1 0 000-2H6a4 4 0 00-4 4v12a4 4 0 004 4h12a4 4 0 004-4v-3.5a1 1 0 10-2 0V18a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path>
-      <path d="M14 2a1 1 0 100 2h4.586l-6.393 6.393a1 1 0 001.414 1.414L20 5.414V10a1 1 0 102 0V4a2 2 0 00-2-2h-6z"></path>
+      <path d="M14 5c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm0 14c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm0-7c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2z"></path>
     </svg>
   );
 };
 
-PublicExternalLink.propTypes = {
+RecordsMoreVertical.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-PublicExternalLink.defaultProps = {
+RecordsMoreVertical.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default PublicExternalLink;
+export default RecordsMoreVertical;

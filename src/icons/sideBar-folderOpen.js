@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SideBarDevice = props => {
+const SideBarFolderOpen = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const SideBarDevice = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M7 2a4 4 0 00-4 4v12a4 4 0 004 4h10a4 4 0 004-4V6a4 4 0 00-4-4H7zM5 6a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2H7a2 2 0 01-2-2V6zm3 2a1 1 0 011-1h6a1 1 0 110 2H9a1 1 0 01-1-1zm1 4a1 1 0 100 2h2a1 1 0 100-2H9zm5 0a1 1 0 100 2h1a1 1 0 100-2h-1zm-5 4a1 1 0 100 2h1a1 1 0 100-2H9zm3 1a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z"
+        d="M5 4a2 2 0 00-2 2v5.75l.257-1.177A2 2 0 015.211 9H19v-.882a2 2 0 00-2-2h-4.4a4 4 0 01-2.586-.948l-1.1-.933A1 1 0 008.266 4H5zm16 5.01v-.892a4 4 0 00-4-4h-4.4a2 2 0 01-1.293-.474l-1.101-.933A3 3 0 008.266 2H5a4 4 0 00-4 4v12c0 .965.341 1.85.91 2.54A2.992 2.992 0 004.485 22h14.68a2 2 0 001.968-1.642l1.637-9A2 2 0 0021 9.01z"
       ></path>
     </svg>
   );
 };
 
-SideBarDevice.propTypes = {
+SideBarFolderOpen.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-SideBarDevice.defaultProps = {
+SideBarFolderOpen.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default SideBarDevice;
+export default SideBarFolderOpen;
