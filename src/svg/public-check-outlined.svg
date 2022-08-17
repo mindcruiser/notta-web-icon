@@ -1,3 +1,25 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_298_3)">
+<rect x="0.01" y="0.01" width="23.98" height="23.98" stroke="#F26661" stroke-width="0.02"/>
+<path d="M0 0L24 24" stroke="#F26661" stroke-width="0.02"/>
+<path d="M24 0L-3.9101e-06 24" stroke="#F26661" stroke-width="0.02"/>
+<path d="M12 0V24" stroke="#F26661" stroke-width="0.02"/>
+<path d="M24 12L-2.86102e-06 12" stroke="#F26661" stroke-width="0.02"/>
+<path d="M24 8L-2.86102e-06 8" stroke="#F26661" stroke-width="0.02"/>
+<path d="M24 16L-2.86102e-06 16" stroke="#F26661" stroke-width="0.02"/>
+<path d="M12 24L12 0" stroke="#F26661" stroke-width="0.02"/>
+<path d="M16 24L16 0" stroke="#F26661" stroke-width="0.02"/>
+<path d="M8 24L8 0" stroke="#F26661" stroke-width="0.02"/>
+<rect x="4.01" y="2.01" width="15.98" height="19.98" rx="0.99" stroke="#F26661" stroke-width="0.02"/>
+<rect x="21.99" y="4.01" width="15.98" height="19.98" rx="0.99" transform="rotate(90 21.99 4.01)" stroke="#F26661" stroke-width="0.02"/>
+<rect x="3.01" y="3.01" width="17.98" height="17.98" rx="0.99" stroke="#F26661" stroke-width="0.02"/>
+<circle cx="12" cy="12" r="9.99" stroke="#F26661" stroke-width="0.02"/>
+<circle cx="12" cy="12" r="4.99" stroke="#F26661" stroke-width="0.02"/>
+</g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6508 4.24076C22.0701 4.60018 22.1187 5.23148 21.7593 5.65081L9.75926 19.6508C9.57798 19.8623 9.31672 19.9886 9.03838 19.9993C8.76004 20.01 8.48985 19.9041 8.29289 19.7071L2.29289 13.7071C1.90237 13.3166 1.90237 12.6834 2.29289 12.2929C2.68342 11.9024 3.31658 11.9024 3.70711 12.2929L8.94352 17.5293L20.2407 4.34923C20.6002 3.9299 21.2315 3.88134 21.6508 4.24076Z" fill="#181F26"/>
+<defs>
+<clipPath id="clip0_298_3">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
 </svg>
