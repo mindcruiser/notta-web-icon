@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LoginPhone = props => {
+const PublicEnter = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -12,24 +12,19 @@ const LoginPhone = props => {
       fill={color}
       {...otherProps}
     >
-      <path d="M9 18a1 1 0 011-1h4a1 1 0 110 2h-4a1 1 0 01-1-1z"></path>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M4 5a3 3 0 013-3h10a3 3 0 013 3v14a3 3 0 01-3 3H7a3 3 0 01-3-3V5zm3-1a1 1 0 00-1 1v14a1 1 0 001 1h10a1 1 0 001-1V5a1 1 0 00-1-1h-1s0 1.5-1.5 1.5h-5C8 5.5 8 4 8 4H7z"
-      ></path>
+      <path d="M15 4a1 1 0 100 2h4a1 1 0 011 1v5a1 1 0 01-1 1H5.414l3.293-3.293a1 1 0 00-1.414-1.414l-5 5a.997.997 0 000 1.415l5 5a1 1 0 001.414-1.415L5.414 15H19a3 3 0 003-3V7a3 3 0 00-3-3h-4z"></path>
     </svg>
   );
 };
 
-LoginPhone.propTypes = {
+PublicEnter.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-LoginPhone.defaultProps = {
+PublicEnter.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default LoginPhone;
+export default PublicEnter;

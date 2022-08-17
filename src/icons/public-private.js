@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PricingPlanFree = props => {
+const PublicPrivate = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const PricingPlanFree = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.207 1.793a1 1 0 00-1.414 1.414L9.586 5H3a1 1 0 00-1 1v4a1 1 0 001 1h1v8a3 3 0 003 3h10a3 3 0 003-3v-8h1a1 1 0 001-1V6a1 1 0 00-1-1h-6.586l1.793-1.793a1 1 0 00-1.414-1.414L12 4.586 9.207 1.793zM4 7h7v2H4V7zm9 2V7h7v2h-7zm0 2h5v8a1 1 0 01-1 1h-4v-9zm-7 0h5v9H7a1 1 0 01-1-1v-8z"
+        d="M12 4a3.5 3.5 0 013.5 3.5V9h-7V7.5A3.5 3.5 0 0112 4zM6.5 9.031V7.5a5.5 5.5 0 1111 0v1.531A4 4 0 0121 13v5a4 4 0 01-4 4H7a4 4 0 01-4-4v-5a4 4 0 013.5-3.969zM16.5 11h.5a2 2 0 012 2v5a2 2 0 01-2 2H7a2 2 0 01-2-2v-5a2 2 0 012-2h9.5zM12 13a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1z"
       ></path>
     </svg>
   );
 };
 
-PricingPlanFree.propTypes = {
+PublicPrivate.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-PricingPlanFree.defaultProps = {
+PublicPrivate.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default PricingPlanFree;
+export default PublicPrivate;

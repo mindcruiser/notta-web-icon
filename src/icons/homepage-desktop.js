@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PricingPlanFree = props => {
+const HomepageDesktop = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,21 @@ const PricingPlanFree = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.207 1.793a1 1 0 00-1.414 1.414L9.586 5H3a1 1 0 00-1 1v4a1 1 0 001 1h1v8a3 3 0 003 3h10a3 3 0 003-3v-8h1a1 1 0 001-1V6a1 1 0 00-1-1h-6.586l1.793-1.793a1 1 0 00-1.414-1.414L12 4.586 9.207 1.793zM4 7h7v2H4V7zm9 2V7h7v2h-7zm0 2h5v8a1 1 0 01-1 1h-4v-9zm-7 0h5v9H7a1 1 0 01-1-1v-8z"
+        d="M6 3a3 3 0 00-3 3v8a3 3 0 003 3h12a3 3 0 003-3V6a3 3 0 00-3-3H6zM5 6a1 1 0 011-1h12a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1V6z"
       ></path>
+      <path d="M2 19a1 1 0 100 2h20a1 1 0 100-2H2z"></path>
     </svg>
   );
 };
 
-PricingPlanFree.propTypes = {
+HomepageDesktop.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-PricingPlanFree.defaultProps = {
+HomepageDesktop.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default PricingPlanFree;
+export default HomepageDesktop;
