@@ -39,7 +39,7 @@ jobs:
         aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
         aws_default_region: ${{secrets.AWS_DEFAULT_REGION}}
         s3_bucket: ${{secrets.S3_BUCKET}}
-        output_directory: 
+        output_directory: docs
     - run: yarn build:bundle
     - run: echo "//183.11.235.38:4873/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
     - run: npm publish
