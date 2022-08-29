@@ -32,8 +32,8 @@ jobs:
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build
-    - name: Upload dist folder to S3
-      uses: ettorestark/upload-to-s3@master
+    - name: Upload static website to S3
+      uses: ettorestark/upload-static-website-to-s3@v1.0.0
       with: 
         aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
         aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
