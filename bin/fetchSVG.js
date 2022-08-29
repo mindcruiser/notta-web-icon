@@ -5,8 +5,9 @@ const Figma = require("figma-js");
 const PQueue = require("p-queue");
 require("dotenv").config();
 
-const FIGMA_TOKEN = process.env.FIGMA_TOKEN || process.env.FigmaToken;
-const FIGMA_FILE_URL = process.env.FIGMA_FILE_URL || process.env.FigmaFileURL;
+const FIGMA_TOKEN = "386383-ad6ce7d9-1718-46f0-b5aa-df2cccea0fce"; // process.env.FIGMA_TOKEN || process.env.FigmaToken;
+const FIGMA_FILE_URL =
+  "https://www.figma.com/file/PZovd6lLWb66HHqevY6WQX/Notta-Web-Icon-System?node-id=6%3A2"; // process.env.FIGMA_FILE_URL || process.env.FigmaFileURL;
 
 const options = {
   format: "svg",
