@@ -32,13 +32,14 @@ jobs:
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
     - run: yarn generate
     - run: yarn build
-    - name: Upload static website to S3
-      uses: ettorestark/upload-static-website-to-s3@v1.0.0
-      with: 
-        aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
-        aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-        aws_default_region: ${{secrets.AWS_DEFAULT_REGION}}
-        s3_bucket: ${{secrets.S3_BUCKET}}
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{secrets.AWS_DEFAULT_REGION}}
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./doc/ s3://${{secrets.S3_BUCKET}} --delete
     - run: yarn build:bundle
     - run: echo "//183.11.235.38:4873/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
     - run: npm publish
