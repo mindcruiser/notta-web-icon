@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AccountRewards = props => {
+const PublicAnalytics = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const AccountRewards = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.207 1.793a1 1 0 00-1.414 1.414L9.586 5H4a2 2 0 00-2 2v2a2 2 0 002 2v8a3 3 0 003 3h10a3 3 0 003-3v-8a2 2 0 002-2V7a2 2 0 00-2-2h-5.586l1.793-1.793a1 1 0 00-1.414-1.414L12 4.586 9.207 1.793zM13 11h5v8a1 1 0 01-1 1h-4v-9zm-7 0h5v9H7a1 1 0 01-1-1v-8zm14-2H4V7h16v2z"
+        d="M12 2a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1c0-5.523-4.477-10-10-10zm1 9V4.062A8.004 8.004 0 0119.938 11H13zM8.94 4.606a1 1 0 00-.766-1.847A10.003 10.003 0 002 12c0 5.523 4.477 10 10 10 4.17 0 7.74-2.551 9.241-6.174a1 1 0 10-1.847-.765A8.003 8.003 0 014 12a8.003 8.003 0 014.94-7.395z"
       ></path>
     </svg>
   );
 };
 
-AccountRewards.propTypes = {
+PublicAnalytics.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-AccountRewards.defaultProps = {
+PublicAnalytics.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default AccountRewards;
+export default PublicAnalytics;

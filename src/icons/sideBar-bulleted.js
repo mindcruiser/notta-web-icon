@@ -12,7 +12,14 @@ const SideBarBulleted = props => {
       fill={color}
       {...otherProps}
     >
-      <circle cx="12" cy="12" r="3"></circle>
+      <g clipPath="url(#clip0_62_66)">
+        <circle cx="12" cy="12" r="3"></circle>
+      </g>
+      <defs>
+        <clipPath id="clip0_62_66">
+          <rect width="24" height="24"></rect>
+        </clipPath>
+      </defs>
     </svg>
   );
 };
