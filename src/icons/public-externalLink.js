@@ -12,8 +12,21 @@ const PublicExternalLink = props => {
       fill={color}
       {...otherProps}
     >
-      <path d="M4 6a2 2 0 012-2h3a1 1 0 000-2H6a4 4 0 00-4 4v12a4 4 0 004 4h12a4 4 0 004-4v-3.5a1 1 0 10-2 0V18a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path>
-      <path d="M14 2a1 1 0 100 2h4.586l-6.393 6.393a1 1 0 001.414 1.414L20 5.414V10a1 1 0 102 0V4a2 2 0 00-2-2h-6z"></path>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M20 7a1 1 0 00-1-1H9.5a7 7 0 00-7 7v1a1 1 0 102 0v-1a5 5 0 015-5H19a1 1 0 001-1z"
+      ></path>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16.293 3.293a1 1 0 000 1.414L18.586 7l-2.293 2.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 0z"
+      ></path>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M20.5 13.5a1 1 0 011 1V17a4 4 0 01-4 4h-14a1 1 0 110-2h14a2 2 0 002-2v-2.5a1 1 0 011-1z"
+      ></path>
     </svg>
   );
 };

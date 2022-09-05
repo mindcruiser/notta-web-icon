@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AccountRewards = props => {
+const PublicDuring = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -15,20 +15,20 @@ const AccountRewards = props => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.207 1.793a1 1 0 00-1.414 1.414L9.586 5H4a2 2 0 00-2 2v2a2 2 0 002 2v8a3 3 0 003 3h10a3 3 0 003-3v-8a2 2 0 002-2V7a2 2 0 00-2-2h-5.586l1.793-1.793a1 1 0 00-1.414-1.414L12 4.586 9.207 1.793zM13 11h5v8a1 1 0 01-1 1h-4v-9zm-7 0h5v9H7a1 1 0 01-1-1v-8zm14-2H4V7h16v2z"
+        d="M21.282 15.924a.997.997 0 00.322-.215l.005-.004a.997.997 0 00.29-.705m-.617.924A.997.997 0 0120.9 16h-18a1 1 0 110-2h15.586l-4.293-4.293a1 1 0 011.415-1.414l6 6a.997.997 0 01.292.704"
       ></path>
     </svg>
   );
 };
 
-AccountRewards.propTypes = {
+PublicDuring.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-AccountRewards.defaultProps = {
+PublicDuring.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default AccountRewards;
+export default PublicDuring;
