@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PublicCheckFilled = props => {
+const PublicArrowLeftTail = props => {
   const { color, size, ...otherProps } = props;
   return (
     <svg
@@ -12,23 +12,19 @@ const PublicCheckFilled = props => {
       fill={color}
       {...otherProps}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M21.22 4.415a2 2 0 01.365 2.805l-10 13a2 2 0 01-2.865.317l-6-5a2 2 0 112.56-3.073l4.403 3.668 8.732-11.351a2 2 0 012.804-.366z"
-      ></path>
+      <path d="M9.707 6.707a1 1 0 00-1.414-1.414l-6 6a.997.997 0 000 1.414l6 6a1 1 0 001.414-1.414L5.414 13H21a1 1 0 100-2H5.414l4.293-4.293z"></path>
     </svg>
   );
 };
 
-PublicCheckFilled.propTypes = {
+PublicArrowLeftTail.propTypes = {
   color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
-PublicCheckFilled.defaultProps = {
+PublicArrowLeftTail.defaultProps = {
   color: 'currentColor',
   size: '24'
 };
 
-export default PublicCheckFilled;
+export default PublicArrowLeftTail;
