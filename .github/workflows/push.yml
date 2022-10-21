@@ -48,5 +48,5 @@ jobs:
         SLACK_MESSAGE: |
           兄弟们，咱们的图标更新啦！
           请使用 yarn upgrade notta-web-icon --latest 更新。
-          在线查看图标: https://vercel.com/airgram/notta-web-icon
+          在线查看图标: https://notta-web-icon.vercel.app
           查看更新详情: ${{ steps.pr-url.outputs.url }}
