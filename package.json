@@ -3,7 +3,7 @@
   "version": "6.4.1",
   "description": "Icons for Notta Web",
   "main": "dist/index.js",
-  "module": "src/icons.js",
+  "module": "dist/index.js",
   "typings": "dist/icons.d.ts",
   "files": [
     "dist",
