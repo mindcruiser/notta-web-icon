@@ -1,14 +1,19 @@
 {
   "name": "notta-web-icon",
-  "version": "7.9.16",
+  "version": "8.0.0",
   "description": "Icons for Notta Web",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/icons.d.ts",
-  "files": [
-    "dist",
-    "es"
-  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/icons.d.ts"
+    },
+    "./*": "./dist/*"
+  },
+  "sideEffects": false,
+  "files": ["dist"],
   "repository": "https://github.com/NottaOrg/notta-web-icon.git",
   "author": "leadream",
   "keywords": [
