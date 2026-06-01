@@ -1,6 +1,6 @@
 {
   "name": "notta-web-icon",
-  "version": "8.0.3",
+  "version": "8.0.4",
   "description": "Icons for Notta Web",
   "main": "dist/index.js",
   "module": "dist/index.js",
