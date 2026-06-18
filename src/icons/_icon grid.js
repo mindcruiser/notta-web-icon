@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const IconGrid = props => {
-  const { color, size, ...otherProps } = props;
+const IconGrid = ({ color = 'currentColor', size = '16', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -43,16 +41,6 @@ const IconGrid = props => {
       </defs>
     </svg>
   );
-};
-
-IconGrid.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-IconGrid.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default IconGrid;

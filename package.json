@@ -1,6 +1,6 @@
 {
   "name": "notta-web-icon",
-  "version": "8.0.6",
+  "version": "9.0.0",
   "description": "Icons for Notta Web",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -46,10 +46,12 @@
   "dependencies": {
     "message-like-antd": "^0.0.1",
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.0.3",
-    "react-dom": "^16.13.1",
     "styled-components": "^5.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.5",

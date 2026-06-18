@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const ToolsSelectFiles = props => {
-  const { color, size, ...otherProps } = props;
+const ToolsSelectFiles = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +22,6 @@ const ToolsSelectFiles = props => {
       <path d="M17.5 14.5a1 1 0 10-2 0V17H13a1 1 0 100 2h2.5v2.5a1 1 0 102 0V19H20a1 1 0 000-2h-2.5v-2.5z"></path>
     </svg>
   );
-};
-
-ToolsSelectFiles.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-ToolsSelectFiles.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default ToolsSelectFiles;

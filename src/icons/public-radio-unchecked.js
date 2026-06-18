@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicRadioUnchecked = props => {
-  const { color, size, ...otherProps } = props;
+const PublicRadioUnchecked = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,16 +24,6 @@ const PublicRadioUnchecked = props => {
       </defs>
     </svg>
   );
-};
-
-PublicRadioUnchecked.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicRadioUnchecked.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicRadioUnchecked;

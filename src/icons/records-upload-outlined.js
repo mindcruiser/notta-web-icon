@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsUploadOutlined = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsUploadOutlined = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,16 +18,6 @@ const RecordsUploadOutlined = props => {
       <path d="M11.242 11.926a1 1 0 011.413-.004l3.566 3.538a1 1 0 11-1.409 1.42L13 15.082V21a1 1 0 11-2 0v-5.998l-1.808 1.815a1 1 0 01-1.417-1.412l3.467-3.48z"></path>
     </svg>
   );
-};
-
-RecordsUploadOutlined.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsUploadOutlined.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsUploadOutlined;

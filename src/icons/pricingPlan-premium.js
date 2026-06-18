@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PricingPlanPremium = props => {
-  const { color, size, ...otherProps } = props;
+const PricingPlanPremium = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const PricingPlanPremium = props => {
       ></path>
     </svg>
   );
-};
-
-PricingPlanPremium.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PricingPlanPremium.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PricingPlanPremium;

@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const HomepageDesktop = props => {
-  const { color, size, ...otherProps } = props;
+const HomepageDesktop = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +22,6 @@ const HomepageDesktop = props => {
       <path d="M2 19a1 1 0 100 2h20a1 1 0 100-2H2z"></path>
     </svg>
   );
-};
-
-HomepageDesktop.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-HomepageDesktop.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default HomepageDesktop;

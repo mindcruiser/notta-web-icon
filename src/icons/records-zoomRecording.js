@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsZoomRecording = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsZoomRecording = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,16 +26,6 @@ const RecordsZoomRecording = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsZoomRecording.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsZoomRecording.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsZoomRecording;

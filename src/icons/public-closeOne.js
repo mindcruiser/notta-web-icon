@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicCloseOne = props => {
-  const { color, size, ...otherProps } = props;
+const PublicCloseOne = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const PublicCloseOne = props => {
       ></path>
     </svg>
   );
-};
-
-PublicCloseOne.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicCloseOne.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicCloseOne;

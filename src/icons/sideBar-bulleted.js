@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SideBarBulleted = props => {
-  const { color, size, ...otherProps } = props;
+const SideBarBulleted = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,16 +24,6 @@ const SideBarBulleted = props => {
       </defs>
     </svg>
   );
-};
-
-SideBarBulleted.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-SideBarBulleted.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default SideBarBulleted;

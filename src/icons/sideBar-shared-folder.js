@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SideBarSharedFolder = props => {
-  const { color, size, ...otherProps } = props;
+const SideBarSharedFolder = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,16 +25,6 @@ const SideBarSharedFolder = props => {
       ></path>
     </svg>
   );
-};
-
-SideBarSharedFolder.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-SideBarSharedFolder.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default SideBarSharedFolder;

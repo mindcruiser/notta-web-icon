@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicRelease = props => {
-  const { color, size, ...otherProps } = props;
+const PublicRelease = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,16 +19,6 @@ const PublicRelease = props => {
       <path d="M8.464 14.121a1 1 0 101.415 1.415l5.656-5.657a1 1 0 00-1.414-1.415l-5.657 5.657z"></path>
     </svg>
   );
-};
-
-PublicRelease.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicRelease.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicRelease;

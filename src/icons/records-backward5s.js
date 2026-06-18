@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsBackward5s = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsBackward5s = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const RecordsBackward5s = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsBackward5s.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsBackward5s.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsBackward5s;

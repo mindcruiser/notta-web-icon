@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsYoutubeRecording = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsYoutubeRecording = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +22,6 @@ const RecordsYoutubeRecording = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsYoutubeRecording.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsYoutubeRecording.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsYoutubeRecording;

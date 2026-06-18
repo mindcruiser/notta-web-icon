@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const AccountTranscriptSettings = props => {
-  const { color, size, ...otherProps } = props;
+const AccountTranscriptSettings = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -23,16 +25,6 @@ const AccountTranscriptSettings = props => {
       ></path>
     </svg>
   );
-};
-
-AccountTranscriptSettings.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AccountTranscriptSettings.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AccountTranscriptSettings;

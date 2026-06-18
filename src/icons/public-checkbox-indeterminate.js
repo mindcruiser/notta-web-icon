@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicCheckboxIndeterminate = props => {
-  const { color, size, ...otherProps } = props;
+const PublicCheckboxIndeterminate = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const PublicCheckboxIndeterminate = props => {
       ></path>
     </svg>
   );
-};
-
-PublicCheckboxIndeterminate.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicCheckboxIndeterminate.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicCheckboxIndeterminate;
