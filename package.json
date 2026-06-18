@@ -71,6 +71,8 @@
     "got": "^11.5.1",
     "p-queue": "2.4.2",
     "prettier-eslint": "^9.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "rollup": "^1.19.4",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-copy": "^3.3.0",
