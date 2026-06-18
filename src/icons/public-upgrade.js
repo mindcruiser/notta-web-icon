@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicUpgrade = props => {
-  const { color, size, ...otherProps } = props;
+const PublicUpgrade = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,16 +18,6 @@ const PublicUpgrade = props => {
       <path d="M13.746 6.583c.294-.793 1.416-.793 1.71 0l1.625 4.393c.092.249.289.446.538.538l4.393 1.625c.793.294.793 1.416 0 1.71l-4.393 1.625a.911.911 0 00-.538.538l-1.625 4.393c-.294.793-1.416.793-1.71 0l-1.625-4.393a.911.911 0 00-.538-.538L7.19 14.848c-.793-.293-.793-1.415 0-1.709l4.393-1.625a.911.911 0 00.538-.538l1.625-4.393z"></path>
     </svg>
   );
-};
-
-PublicUpgrade.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicUpgrade.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicUpgrade;

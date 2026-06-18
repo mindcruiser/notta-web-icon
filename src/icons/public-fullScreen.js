@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicFullScreen = props => {
-  const { color, size, ...otherProps } = props;
+const PublicFullScreen = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,16 +18,6 @@ const PublicFullScreen = props => {
       <path d="M5 14.343v3.415l4.121-4.122a1 1 0 111.415 1.414L6.586 19h3.07a1 1 0 010 2H4a1 1 0 01-1-1v-5.657a1 1 0 112 0z"></path>
     </svg>
   );
-};
-
-PublicFullScreen.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicFullScreen.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicFullScreen;

@@ -27,7 +27,7 @@ export default {
     preserveModulesRoot: "src",
     exports: "named",
   },
-  external: ["react", "prop-types"],
+  external: ["react"],
   plugins: [
     babel({
       exclude: "node_modules/**",

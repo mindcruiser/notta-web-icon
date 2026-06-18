@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicArrowUpOutlined = props => {
-  const { color, size, ...otherProps } = props;
+const PublicArrowUpOutlined = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const PublicArrowUpOutlined = props => {
       ></path>
     </svg>
   );
-};
-
-PublicArrowUpOutlined.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicArrowUpOutlined.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicArrowUpOutlined;

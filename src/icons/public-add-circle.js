@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicAddCircle = props => {
-  const { color, size, ...otherProps } = props;
+const PublicAddCircle = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +22,6 @@ const PublicAddCircle = props => {
       ></path>
     </svg>
   );
-};
-
-PublicAddCircle.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicAddCircle.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicAddCircle;

@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const LoginEyeOn = props => {
-  const { color, size, ...otherProps } = props;
+const LoginEyeOn = ({ color = 'currentColor', size = '16', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +17,6 @@ const LoginEyeOn = props => {
       ></path>
     </svg>
   );
-};
-
-LoginEyeOn.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-LoginEyeOn.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default LoginEyeOn;

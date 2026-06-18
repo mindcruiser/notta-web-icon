@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsStopOutlined = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsStopOutlined = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -27,16 +29,6 @@ const RecordsStopOutlined = props => {
       </defs>
     </svg>
   );
-};
-
-RecordsStopOutlined.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsStopOutlined.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsStopOutlined;

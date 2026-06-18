@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicUnable = props => {
-  const { color, size, ...otherProps } = props;
+const PublicUnable = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,16 +19,6 @@ const PublicUnable = props => {
       <path d="M16.35 18.02l.665.664a1.18 1.18 0 001.669-1.67l-.664-.663-1.67-1.67-.402-.403a1.18 1.18 0 00-1.67 1.67l.403.403 1.67 1.67z"></path>
     </svg>
   );
-};
-
-PublicUnable.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicUnable.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicUnable;

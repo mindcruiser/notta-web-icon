@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsAudioFilesFilled = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsAudioFilesFilled = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const RecordsAudioFilesFilled = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsAudioFilesFilled.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsAudioFilesFilled.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsAudioFilesFilled;

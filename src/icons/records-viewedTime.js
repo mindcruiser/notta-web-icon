@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsViewedTime = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsViewedTime = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const RecordsViewedTime = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsViewedTime.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsViewedTime.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsViewedTime;

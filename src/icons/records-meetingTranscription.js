@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsMeetingTranscription = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsMeetingTranscription = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const RecordsMeetingTranscription = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsMeetingTranscription.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsMeetingTranscription.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsMeetingTranscription;

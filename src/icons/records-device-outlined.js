@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsDeviceOutlined = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsDeviceOutlined = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,16 +27,6 @@ const RecordsDeviceOutlined = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsDeviceOutlined.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsDeviceOutlined.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsDeviceOutlined;

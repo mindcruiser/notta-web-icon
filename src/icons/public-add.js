@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicAdd = props => {
-  const { color, size, ...otherProps } = props;
+const PublicAdd = ({ color = 'currentColor', size = '16', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +17,6 @@ const PublicAdd = props => {
       ></path>
     </svg>
   );
-};
-
-PublicAdd.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicAdd.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicAdd;

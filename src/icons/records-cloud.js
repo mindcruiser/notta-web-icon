@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const RecordsCloud = props => {
-  const { color, size, ...otherProps } = props;
+const RecordsCloud = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -20,16 +22,6 @@ const RecordsCloud = props => {
       ></path>
     </svg>
   );
-};
-
-RecordsCloud.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-RecordsCloud.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default RecordsCloud;

@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicCollaboration = props => {
-  const { color, size, ...otherProps } = props;
+const PublicCollaboration = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,16 +20,6 @@ const PublicCollaboration = props => {
       <path d="M20.75 19.406h-5.079a2.5 2.5 0 00.079-.625v-2.5c0-1.182-.41-2.269-1.097-3.125H19.5a2.5 2.5 0 012.5 2.5v2.5c0 .69-.56 1.25-1.25 1.25z"></path>
     </svg>
   );
-};
-
-PublicCollaboration.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicCollaboration.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicCollaboration;

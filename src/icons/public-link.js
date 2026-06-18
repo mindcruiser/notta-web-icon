@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicLink = props => {
-  const { color, size, ...otherProps } = props;
+const PublicLink = ({ color = 'currentColor', size = '16', ...otherProps }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,16 +15,6 @@ const PublicLink = props => {
       <path d="M8 11a1 1 0 100 2h8a1 1 0 100-2H8z"></path>
     </svg>
   );
-};
-
-PublicLink.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicLink.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicLink;

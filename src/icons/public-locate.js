@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const PublicLocate = props => {
-  const { color, size, ...otherProps } = props;
+const PublicLocate = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,16 +26,6 @@ const PublicLocate = props => {
       ></path>
     </svg>
   );
-};
-
-PublicLocate.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-PublicLocate.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default PublicLocate;

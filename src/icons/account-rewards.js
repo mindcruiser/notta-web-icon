@@ -1,8 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const AccountRewards = props => {
-  const { color, size, ...otherProps } = props;
+const AccountRewards = ({
+  color = 'currentColor',
+  size = '16',
+  ...otherProps
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -19,16 +21,6 @@ const AccountRewards = props => {
       ></path>
     </svg>
   );
-};
-
-AccountRewards.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-};
-
-AccountRewards.defaultProps = {
-  color: 'currentColor',
-  size: '24'
 };
 
 export default AccountRewards;
