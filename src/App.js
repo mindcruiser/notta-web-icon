@@ -27,11 +27,11 @@ class List extends React.Component {
         <div>
           <Header />
           <Container>
-            {Object.keys(Object.fromEntries(Object.entries(icons).sort())).map(
-              (key, index) => {
+            {Object.keys(icons).sort().map(
+              (key) => {
                 const Icon = icons[key];
                 return (
-                  <li key={index}>
+                  <li key={key}>
                     <IconWrapper name={key}>
                       <Icon />
                       <span>{key}</span>
