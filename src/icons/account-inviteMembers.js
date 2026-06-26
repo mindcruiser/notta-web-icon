@@ -17,7 +17,13 @@ const AccountInviteMembers = ({
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M5 6.5a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM9.5 4a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm8.5 9.5a1 1 0 011 1v2h2a1 1 0 110 2h-2v2a1 1 0 11-2 0v-2h-2a1 1 0 110-2h2v-2a1 1 0 011-1zM6 13a4 4 0 00-4 4v4a1 1 0 001 1h11a1 1 0 100-2H4v-3a2 2 0 012-2h8a1 1 0 100-2H6z"
+        d="M6 6.5a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM10.5 4a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
+      ></path>
+      <path d="M19.5 7a1 1 0 011 1v1.5H22a1 1 0 110 2h-1.5V13a1 1 0 11-2 0v-1.5H17a1 1 0 110-2h1.5V8a1 1 0 011-1z"></path>
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9 12a7 7 0 00-7 7v2a1 1 0 001 1h15a1 1 0 001-1v-2a7 7 0 00-7-7H9zm-5 7a5 5 0 015-5h3a5 5 0 015 5v1H4v-1z"
       ></path>
     </svg>
   );

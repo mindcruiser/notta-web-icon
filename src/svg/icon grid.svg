@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1291_632)">
+<rect x="0.025" y="0.025" width="23.95" height="23.95" stroke="#F26661" stroke-width="0.05"/>
+<path d="M0 0L24 24" stroke="#F26661" stroke-width="0.05"/>
+<path d="M24 0L-3.9101e-06 24" stroke="#F26661" stroke-width="0.05"/>
+<path d="M12 0V24" stroke="#F26661" stroke-width="0.05"/>
+<path d="M24 12L-2.86102e-06 12" stroke="#F26661" stroke-width="0.05"/>
+<path d="M24 8L-2.86102e-06 8" stroke="#F26661" stroke-width="0.05"/>
+<path d="M24 16L-2.86102e-06 16" stroke="#F26661" stroke-width="0.05"/>
+<path d="M12 24L12 0" stroke="#F26661" stroke-width="0.05"/>
+<path d="M16 24L16 0" stroke="#F26661" stroke-width="0.05"/>
+<path d="M8 24L8 0" stroke="#F26661" stroke-width="0.05"/>
+<rect x="4.025" y="2.025" width="15.95" height="19.95" rx="0.975" stroke="#F26661" stroke-width="0.05"/>
+<rect x="21.975" y="4.025" width="15.95" height="19.95" rx="0.975" transform="rotate(90 21.975 4.025)" stroke="#F26661" stroke-width="0.05"/>
+<rect x="3.025" y="3.025" width="17.95" height="17.95" rx="0.975" stroke="#F26661" stroke-width="0.05"/>
+<circle cx="12" cy="12" r="9.975" stroke="#F26661" stroke-width="0.05"/>
+<circle cx="12" cy="12" r="4.975" stroke="#F26661" stroke-width="0.05"/>
+</g>
+<defs>
+<clipPath id="clip0_1291_632">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -14,21 +14,14 @@ const PublicExternalLink = ({
       fill={color}
       {...otherProps}
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M20 7a1 1 0 00-1-1H9.5a7 7 0 00-7 7v1a1 1 0 102 0v-1a5 5 0 015-5H19a1 1 0 001-1z"
-      ></path>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16.293 3.293a1 1 0 000 1.414L18.586 7l-2.293 2.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 00-1.414 0z"
-      ></path>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M20.5 13.5a1 1 0 011 1V17a4 4 0 01-4 4h-14a1 1 0 110-2h14a2 2 0 002-2v-2.5a1 1 0 011-1z"
-      ></path>
+      <g clipPath="url(#clip0_3523_38)">
+        <path d="M17.364 14.121a1 1 0 102 0V5.636a.997.997 0 00-1-1H9.879a1 1 0 100 2h6.07L4.93 17.656a1 1 0 101.414 1.415l11.021-11.02v6.07z"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_3523_38">
+          <rect width="24" height="24"></rect>
+        </clipPath>
+      </defs>
     </svg>
   );
 };

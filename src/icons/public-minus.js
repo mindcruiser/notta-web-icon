@@ -14,7 +14,6 @@ const PublicMinus = ({
       fill={color}
       {...otherProps}
     >
-      <path d="M5 12h14"></path>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
