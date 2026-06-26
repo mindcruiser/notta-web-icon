@@ -12,8 +12,13 @@ jobs:
   icon_automation:
     name: figma icon automation
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v2
+      with:
+        # PAT with write access so the commit-back step can push to master
+        token: ${{ secrets.GH_TOKEN }}
     - uses: actions/setup-node@v2
       with:
         node-version: '20.x'
@@ -34,6 +39,20 @@ jobs:
     - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+    # 把 Figma 重新生成的图标源码回写到仓库，消除 src/ 与已发布 dist/ 的漂移。
+    # 仅提交 src/（dist/ 已在 .gitignore），不触碰 package.json，配合 paths 过滤与
+    # [skip ci] 双重保证不会自我触发新一轮工作流。
+    - name: Commit regenerated icon sources back to master
+      run: |
+        git config user.name "notta-icon-bot"
+        git config user.email "icon-bot@notta.ai"
+        git add src
+        if git diff --cached --quiet; then
+          echo "图标源码无变化，跳过回写。"
+        else
+          git commit -m "chore(icons): 同步 Figma 重新生成的图标源码 [skip ci]"
+          git push origin HEAD:master
+        fi
     - name: Pull Request URL
       uses: kceb/pull-request-url-action@v2
       id: pr-url
