@@ -352,4 +352,5 @@ export { default as AppMemoUpdate } from './icons/App memo-update';
 export { default as AppMemoNottaMemo } from './icons/App memo-notta_memo';
 export { default as AppMemoHelpQuestion } from './icons/App memo-help_question';
 export { default as AppMemoSetting } from './icons/App memo-setting';
+export { default as RecordsEngine } from './icons/records-engine';
 export { default as IconGrid } from './icons/icon grid';

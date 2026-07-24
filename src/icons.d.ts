@@ -361,4 +361,5 @@ export const AppMemoUpdate: Icon;
 export const AppMemoNottaMemo: Icon;
 export const AppMemoHelpQuestion: Icon;
 export const AppMemoSetting: Icon;
+export const RecordsEngine: Icon;
 export const IconGrid: Icon;
