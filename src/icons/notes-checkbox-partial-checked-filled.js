@@ -15,9 +15,9 @@ const NotesCheckboxPartialCheckedFilled = ({
       {...otherProps}
     >
       <path
+        d="M21 4a1 1 0 00-1-1H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4zm-4 8a1 1 0 00-1-1H8a1 1 0 100 2h8a1 1 0 001-1z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M21 4a1 1 0 00-1-1H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4zm-4 8a1 1 0 00-1-1H8a1 1 0 100 2h8a1 1 0 001-1z"
       ></path>
     </svg>
   );

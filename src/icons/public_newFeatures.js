@@ -15,9 +15,9 @@ const PublicNewFeatures = ({
       {...otherProps}
     >
       <path
+        d="M4 4a1 1 0 000 2h1a1 1 0 000-2H4zm5 0a1 1 0 000 2h11a1 1 0 100-2H9zm-1 8a1 1 0 011-1h11a1 1 0 110 2H9a1 1 0 01-1-1zm-4-1a1 1 0 100 2h1a1 1 0 100-2H4zm4 8a1 1 0 011-1h11a1 1 0 110 2H9a1 1 0 01-1-1zm-4-1a1 1 0 100 2h1a1 1 0 100-2H4z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M4 4a1 1 0 000 2h1a1 1 0 000-2H4zm5 0a1 1 0 000 2h11a1 1 0 100-2H9zm-1 8a1 1 0 011-1h11a1 1 0 110 2H9a1 1 0 01-1-1zm-4-1a1 1 0 100 2h1a1 1 0 100-2H4zm4 8a1 1 0 011-1h11a1 1 0 110 2H9a1 1 0 01-1-1zm-4-1a1 1 0 100 2h1a1 1 0 100-2H4z"
       ></path>
     </svg>
   );

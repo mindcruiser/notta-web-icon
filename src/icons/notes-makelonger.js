@@ -15,9 +15,9 @@ const NotesMakelonger = ({
       {...otherProps}
     >
       <path
+        d="M4 4a1 1 0 000 2h16a1 1 0 100-2H4zm-1 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h16a1 1 0 100-2H4zm0 5a1 1 0 100 2h11a1 1 0 100-2H4z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M4 4a1 1 0 000 2h16a1 1 0 100-2H4zm-1 6a1 1 0 011-1h16a1 1 0 110 2H4a1 1 0 01-1-1zm1 4a1 1 0 100 2h16a1 1 0 100-2H4zm0 5a1 1 0 100 2h11a1 1 0 100-2H4z"
       ></path>
     </svg>
   );

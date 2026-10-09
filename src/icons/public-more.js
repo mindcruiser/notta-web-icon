@@ -11,9 +11,9 @@ const PublicMore = ({ color = 'currentColor', size = '16', ...otherProps }) => {
       {...otherProps}
     >
       <path
+        d="M7.5 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm6 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm4.5 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M7.5 12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm6 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm4.5 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
       ></path>
     </svg>
   );

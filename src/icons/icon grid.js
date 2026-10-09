@@ -11,7 +11,7 @@ const IconGrid = ({ color = 'currentColor', size = '16', ...otherProps }) => {
       {...otherProps}
     >
       <g clipPath="url(#clip0_1291_632)">
-        <rect x=".025" y=".025" width="23.95" height="23.95"></rect>
+        <path d="M.025.025h23.95v23.95H.025V.025z"></path>
         <path d="M0 0l24 24"></path>
         <path d="M24 0L0 24"></path>
         <path d="M12 0v24"></path>
@@ -21,18 +21,11 @@ const IconGrid = ({ color = 'currentColor', size = '16', ...otherProps }) => {
         <path d="M12 24V0"></path>
         <path d="M16 24V0"></path>
         <path d="M8 24V0"></path>
-        <rect x="4.025" y="2.025" width="15.95" height="19.95" rx=".975"></rect>
-        <rect
-          x="21.975"
-          y="4.025"
-          width="15.95"
-          height="19.95"
-          rx=".975"
-          transform="rotate(90 21.975 4.025)"
-        ></rect>
-        <rect x="3.025" y="3.025" width="17.95" height="17.95" rx=".975"></rect>
-        <circle cx="12" cy="12" r="9.975"></circle>
-        <circle cx="12" cy="12" r="4.975"></circle>
+        <path d="M5 2.025h14c.538 0 .975.437.975.975v18a.975.975 0 01-.975.975H5A.975.975 0 014.025 21V3c0-.538.437-.975.975-.975z"></path>
+        <path d="M21.975 5v14a.975.975 0 01-.975.975H3A.975.975 0 012.025 19V5c0-.538.437-.975.975-.975h18c.538 0 .975.437.975.975z"></path>
+        <path d="M4 3.025h16c.538 0 .975.437.975.975v16a.975.975 0 01-.975.975H4A.975.975 0 013.025 20V4c0-.538.437-.975.975-.975z"></path>
+        <path d="M21.975 12c0 5.509-4.466 9.975-9.975 9.975-5.509 0-9.975-4.466-9.975-9.975 0-5.509 4.466-9.975 9.975-9.975 5.509 0 9.975 4.466 9.975 9.975z"></path>
+        <path d="M16.975 12a4.975 4.975 0 11-9.95 0 4.975 4.975 0 019.95 0z"></path>
       </g>
       <defs>
         <clipPath id="clip0_1291_632">

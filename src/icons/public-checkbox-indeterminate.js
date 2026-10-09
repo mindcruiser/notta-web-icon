@@ -15,9 +15,9 @@ const PublicCheckboxIndeterminate = ({
       {...otherProps}
     >
       <path
+        d="M6 3a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3V6a3 3 0 00-3-3H6zm2 8a1 1 0 100 2h8a1 1 0 100-2H8z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M6 3a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3V6a3 3 0 00-3-3H6zm2 8a1 1 0 100 2h8a1 1 0 100-2H8z"
       ></path>
     </svg>
   );

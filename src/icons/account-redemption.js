@@ -15,19 +15,19 @@ const AccountRedemption = ({
       {...otherProps}
     >
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
         d="M12.293 6.293a1 1 0 011.414 0l3.5 3.5A1 1 0 0116.5 11.5h-9a1 1 0 110-2h6.586l-1.793-1.793a1 1 0 010-1.414z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M11.707 17.707a1 1 0 01-1.414 0l-3.5-3.5A1 1 0 017.5 12.5h9a1 1 0 110 2H9.914l1.793 1.793a1 1 0 010 1.414z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M2 6a4 4 0 014-4h12a4 4 0 014 4v12a4 4 0 01-4 4H6a4 4 0 01-4-4V6zm4-2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H6z"
+        fillRule="evenodd"
+        clipRule="evenodd"
       ></path>
     </svg>
   );

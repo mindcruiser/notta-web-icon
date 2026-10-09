@@ -15,34 +15,34 @@ const AccountVocabulary = ({
       {...otherProps}
     >
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
         d="M2 7a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V7zm4 0H4v2h2V7z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M2 15a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm4 0H4v2h2v-2z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M9 7a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V7zm4 0h-2v2h2V7z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M9 15a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2zm4 0h-2v2h2v-2z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M16 7a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V7zm4 0h-2v2h2V7z"
-      ></path>
-      <path
         fillRule="evenodd"
         clipRule="evenodd"
+      ></path>
+      <path
         d="M16 15a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2zm4 0h-2v2h2v-2z"
+        fillRule="evenodd"
+        clipRule="evenodd"
       ></path>
     </svg>
   );

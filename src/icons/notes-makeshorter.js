@@ -15,9 +15,9 @@ const NotesMakeshorter = ({
       {...otherProps}
     >
       <path
+        d="M4 9a1 1 0 000 2h16a1 1 0 100-2H4zm0 5a1 1 0 100 2h11a1 1 0 100-2H4z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M4 9a1 1 0 100 2h16a1 1 0 100-2H4zm0 5a1 1 0 100 2h11a1 1 0 100-2H4z"
       ></path>
     </svg>
   );

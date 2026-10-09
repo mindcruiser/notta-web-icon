@@ -292,6 +292,7 @@ export const PublicHelpfulFilled: Icon;
 export const PublicNotHelpfulFilled: Icon;
 export const PublicAiWritten: Icon;
 export const PublicLibrary: Icon;
+export const PublicQuotes: Icon;
 export const PublicAiWrittenOutlined: Icon;
 export const PublicWrite: Icon;
 export const NotesSave: Icon;

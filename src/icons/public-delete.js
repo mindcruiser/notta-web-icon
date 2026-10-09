@@ -15,9 +15,9 @@ const PublicDelete = ({
       {...otherProps}
     >
       <path
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM8 11a1 1 0 100 2h8a1 1 0 100-2H8z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM8 11a1 1 0 100 2h8a1 1 0 100-2H8z"
       ></path>
     </svg>
   );

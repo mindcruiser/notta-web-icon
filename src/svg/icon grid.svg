@@ -1,20 +1,20 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1291_632)">
-<rect x="0.025" y="0.025" width="23.95" height="23.95" stroke="#F26661" stroke-width="0.05"/>
-<path d="M0 0L24 24" stroke="#F26661" stroke-width="0.05"/>
-<path d="M24 0L-3.9101e-06 24" stroke="#F26661" stroke-width="0.05"/>
-<path d="M12 0V24" stroke="#F26661" stroke-width="0.05"/>
-<path d="M24 12L-2.86102e-06 12" stroke="#F26661" stroke-width="0.05"/>
-<path d="M24 8L-2.86102e-06 8" stroke="#F26661" stroke-width="0.05"/>
-<path d="M24 16L-2.86102e-06 16" stroke="#F26661" stroke-width="0.05"/>
-<path d="M12 24L12 0" stroke="#F26661" stroke-width="0.05"/>
-<path d="M16 24L16 0" stroke="#F26661" stroke-width="0.05"/>
-<path d="M8 24L8 0" stroke="#F26661" stroke-width="0.05"/>
-<rect x="4.025" y="2.025" width="15.95" height="19.95" rx="0.975" stroke="#F26661" stroke-width="0.05"/>
-<rect x="21.975" y="4.025" width="15.95" height="19.95" rx="0.975" transform="rotate(90 21.975 4.025)" stroke="#F26661" stroke-width="0.05"/>
-<rect x="3.025" y="3.025" width="17.95" height="17.95" rx="0.975" stroke="#F26661" stroke-width="0.05"/>
-<circle cx="12" cy="12" r="9.975" stroke="#F26661" stroke-width="0.05"/>
-<circle cx="12" cy="12" r="4.975" stroke="#F26661" stroke-width="0.05"/>
+<path d="M0.025 0.025H23.975V23.975H0.025V0.025Z" stroke-width="0.05" stroke="#F26661"/>
+<path d="M0 0L24 24" stroke-width="0.05" stroke="#F26661"/>
+<path d="M24 0L-4.86377e-06 24" stroke-width="0.05" stroke="#F26661"/>
+<path d="M12 0V24" stroke-width="0.05" stroke="#F26661"/>
+<path d="M24 12L-3.8147e-06 12" stroke-width="0.05" stroke="#F26661"/>
+<path d="M24 8L-3.8147e-06 8" stroke-width="0.05" stroke="#F26661"/>
+<path d="M24 16L-3.8147e-06 16" stroke-width="0.05" stroke="#F26661"/>
+<path d="M12 24L12 0" stroke-width="0.05" stroke="#F26661"/>
+<path d="M16 24L16 0" stroke-width="0.05" stroke="#F26661"/>
+<path d="M8 24L8 0" stroke-width="0.05" stroke="#F26661"/>
+<path d="M5 2.025H19C19.5385 2.025 19.975 2.46152 19.975 3V21C19.975 21.5385 19.5385 21.975 19 21.975H5C4.46152 21.975 4.025 21.5385 4.025 21V3C4.025 2.46152 4.46152 2.025 5 2.025Z" stroke-width="0.05" stroke="#F26661"/>
+<path d="M21.975 5L21.975 19C21.975 19.5385 21.5385 19.975 21 19.975L3 19.975C2.46152 19.975 2.025 19.5385 2.025 19L2.025 5C2.025 4.46152 2.46152 4.025 3 4.025L21 4.025C21.5385 4.025 21.975 4.46152 21.975 5Z" stroke-width="0.05" stroke="#F26661"/>
+<path d="M4 3.025H20C20.5385 3.025 20.975 3.46152 20.975 4V20C20.975 20.5385 20.5385 20.975 20 20.975H4C3.46152 20.975 3.025 20.5385 3.025 20V4C3.025 3.46152 3.46152 3.025 4 3.025Z" stroke-width="0.05" stroke="#F26661"/>
+<path d="M21.975 12C21.975 17.509 17.509 21.975 12 21.975C6.49096 21.975 2.025 17.509 2.025 12C2.025 6.49096 6.49096 2.025 12 2.025C17.509 2.025 21.975 6.49096 21.975 12Z" stroke-width="0.05" stroke="#F26661"/>
+<path d="M16.975 12C16.975 14.7476 14.7476 16.975 12 16.975C9.25238 16.975 7.025 14.7476 7.025 12C7.025 9.25238 9.25238 7.025 12 7.025C14.7476 7.025 16.975 9.25238 16.975 12Z" stroke-width="0.05" stroke="#F26661"/>
 </g>
 <defs>
 <clipPath id="clip0_1291_632">

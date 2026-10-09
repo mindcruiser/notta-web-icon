@@ -15,9 +15,9 @@ const PublicLoadingCircle = ({
       {...otherProps}
     >
       <path
+        d="M12 5a7 7 0 107 7 1 1 0 112 0 9 9 0 11-9-9 1 1 0 110 2z"
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M12 5a7 7 0 107 7 1 1 0 112 0 9 9 0 11-9-9 1 1 0 110 2z"
       ></path>
     </svg>
   );
