@@ -52,6 +52,9 @@ async function processSvg(svg) {
     .then(svg => svg.replace(/;/g, ''))
     .then(removeSVGElement)
     .then(svg => svg.replace(/([a-z]+)-([a-z]+)=/g, (_, a, b) => `${a}${CamelCase(b)}=`))
+    // JSX does not accept XML namespace separators in attribute names.
+    .then(svg => svg.replace(/\b(xlink|xml|xmlns):([a-z][a-z-]*)=/g,
+      (_, namespace, name) => `${namespace}${CamelCase(`-${name}`)}=`))
   return optimized;
 }
 
